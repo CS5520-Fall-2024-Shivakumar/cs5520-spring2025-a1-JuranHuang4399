@@ -42,9 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 //used for debugging (logcat)
                 if (layout == null) {
                     Log.d("MainActivity", "Toast layout inflation failed");
-                } else {
-                    Log.d("MainActivity", "Toast layout inflated successfully");
-                }
 
                 TextView toastTextView = layout.findViewById(R.id.toastText);
                 toastTextView.setText("Juran Huang\nhuang.jur@northeastern.edu");
