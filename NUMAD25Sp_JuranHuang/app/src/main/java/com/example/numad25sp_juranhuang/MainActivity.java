@@ -5,17 +5,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 //used for debugging (logcat)
                 if (layout == null) {
                     Log.d("MainActivity", "Toast layout inflation failed");
+                }
 
                 TextView toastTextView = layout.findViewById(R.id.toastText);
                 toastTextView.setText("Juran Huang\nhuang.jur@northeastern.edu");
