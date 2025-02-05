@@ -1,5 +1,6 @@
 package com.example.numad25sp_juranhuang;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -47,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
                 toast.setDuration(Toast.LENGTH_LONG);
                 toast.setView(layout);
                 toast.show();
+            }
+        });
+        Button quicCalc = findViewById(R.id.quicCalcButton);
+        quicCalc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CalculatorActivity.class);
+                startActivity(intent);
             }
         });
     }

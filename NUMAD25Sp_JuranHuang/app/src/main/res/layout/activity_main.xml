@@ -30,4 +30,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.619" />
 
+    <Button
+        android:id="@+id/quicCalcButton"
+        android:layout_width="178dp"
+        android:layout_height="79dp"
+        android:text="Quic Calc"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
