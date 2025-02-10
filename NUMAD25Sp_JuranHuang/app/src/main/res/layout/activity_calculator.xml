@@ -241,7 +241,7 @@
         android:text="-"
         app:layout_constraintWidth_percent="0.45"
         app:layout_constraintHeight_percent="0.12"
-        android:layout_margin="15dp"
+        android:layout_marginTop="15dp"
         android:autoSizeTextType="uniform"
         android:autoSizeMinTextSize="15sp"
         android:autoSizeMaxTextSize="30sp"
