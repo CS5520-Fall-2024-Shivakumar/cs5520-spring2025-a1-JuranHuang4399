@@ -31,23 +31,8 @@ public class MainActivity extends AppCompatActivity {
         aboutMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //used for debugging (logcat)
-                Log.d("MainActivity", "Button clicked");
-
-                LayoutInflater inflater = getLayoutInflater();
-                View layout = inflater.inflate(R.layout.toast_layout, null);
-
-                //used for debugging (logcat)
-                if (layout == null) {
-                    Log.d("MainActivity", "Toast layout inflation failed");
-                }
-
-                TextView toastTextView = layout.findViewById(R.id.toastText);
-                toastTextView.setText("Juran Huang\nhuang.jur@northeastern.edu");
-                Toast toast = new Toast(getApplicationContext());
-                toast.setDuration(Toast.LENGTH_LONG);
-                toast.setView(layout);
-                toast.show();
+                Intent intent = new Intent (MainActivity.this, AboutMeActivity.class);
+                startActivity(intent);
             }
         });
         Button quicCalc = findViewById(R.id.quicCalcButton);
@@ -55,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CalculatorActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button ContactsButton = findViewById(R.id.ContactButton);
+        ContactsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ContactsActivity.class);
                 startActivity(intent);
             }
         });

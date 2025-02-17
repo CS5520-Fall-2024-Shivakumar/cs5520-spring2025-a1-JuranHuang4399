@@ -13,6 +13,16 @@
         android:theme="@style/Theme.NUMAD25Sp_JuranHuang"
         tools:targetApi="31">
         <activity
+            android:name=".ContactsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContanctsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NUMAD25Sp_JuranHuang" />
+        <activity
+            android:name=".AboutMeActivity"
+            android:exported="false" />
+        <activity
             android:name=".CalculatorActivity"
             android:exported="true" />
         <activity
