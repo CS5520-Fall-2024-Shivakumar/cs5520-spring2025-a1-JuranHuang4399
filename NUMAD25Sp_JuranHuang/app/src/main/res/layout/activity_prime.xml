@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Find Primes Button -->
+    <Button
+        android:id="@+id/findPrimesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Primes"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/findPrimesGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/findPrimesGuide"/>
+
+    <!-- Terminate Search Button -->
+    <Button
+        android:id="@+id/terminateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terminate Search"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/terminateButtonGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/terminateButtonGuide"/>
+
+    <!-- Pacifier Switch -->
+    <CheckBox
+        android:id="@+id/pacifierSwitchCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pacifier Switch"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/pacifierSwitchGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pacifierSwitchGuide" />
+
+    <!-- Current Number Being Checked -->
+    <TextView
+        android:id="@+id/currentNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Number: 0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/currentNumberGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/currentNumberGuide" />
+
+    <!-- Latest Prime Found -->
+    <TextView
+        android:id="@+id/latestPrimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest Prime: None"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/latestPrimeGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/latestPrimeGuide" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/findPrimesGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terminateButtonGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/pacifierSwitchGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/currentNumberGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/latestPrimeGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+</androidx.constraintlayout.widget.ConstraintLayout>

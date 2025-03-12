@@ -71,11 +71,13 @@ public class ContactsActivity extends AppCompatActivity {
             if (!name.isEmpty() && !phone.isEmpty()) {
                 contactList.add(new Contact(name, phone));
                 // notify Recycler View about the newly added contact
+                // notifyItemInserted(position) is built in method from RecyclerView.Adapter
                 adapter.notifyItemInserted(contactList.size() - 1);
                 saveContacts();
                 Snackbar.make(recyclerView, "Contact Added", Snackbar.LENGTH_LONG)
                         .setAction("Undo", v -> {
                             contactList.remove(contactList.size() - 1);
+                            // notifyDataSetChanged is built in method from RecyclerView.Adapter
                             adapter.notifyDataSetChanged();
                             Toast.makeText(this, "Contact Removed", Toast.LENGTH_SHORT).show();
                         }).show();
